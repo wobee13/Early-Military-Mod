@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "earlymillitary",
+  "version": "${version}",
+  "name": "EarlyMillitary",
+  "description": "An Early Military Mod with Simple Guns and Vehicles",
+  "authors": [
+    "Mr_sup2044",
+    "Wobee13"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/earlymillitary/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "mrsup2044.earlymillitary.client.EarlymillitaryClient"
+    ],
+    "main": [
+      "mrsup2044.earlymillitary.Earlymillitary"
+    ]
+  },
+  "mixins": [
+    "earlymillitary.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}
