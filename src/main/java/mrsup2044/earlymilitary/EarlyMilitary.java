@@ -31,7 +31,7 @@ public class EarlyMilitary implements ModInitializer {
             .build();
 
     public static final Block EXAMPLE_BLOCK = new Block(FabricBlockSettings.of(Material.WOOD).strength(4.0f));
-
+    public static final Block LOOT = new Block(FabricBlockSettings.of(Material.WOOD).strength(4.0f));
 
     public static final Item FABRIC_ITEM = new Item(new FabricItemSettings().group(EarlyMilitary.ITEM_GROUP));
     public static final Item Another_ITEM = new Item(new FabricItemSettings().group(EarlyMilitary.OTHER_GROUP));
@@ -42,5 +42,7 @@ public class EarlyMilitary implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("earlymilitary","test1"), Another_ITEM);
         Registry.register(Registry.BLOCK, new Identifier("earlymilitary", "ammo_crate"), EXAMPLE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("earlymilitary", "ammo_crate"), new BlockItem(EXAMPLE_BLOCK, new FabricItemSettings().group(EarlyMilitary.ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier("earlymilitary", "loot"), LOOT);
+        Registry.register(Registry.ITEM, new Identifier("earlymilitary", "loot"), new BlockItem(LOOT, new FabricItemSettings().group(EarlyMilitary.ITEM_GROUP)));
     }
 }
